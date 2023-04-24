@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN</title>
+    <link rel="stylesheet" href="../css/output.css">
+    <link rel="icon" href="../assets/LogoS.png">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Background Keseluruhan -->
+    <section class="bg-slate-400">
+        <!-- Card Container -->
+        <div class="flex flex-col w-2/3 rounded-lg items-center justify-center mx-auto md:h-screen lg:py-0 sm:font-thin">
+            <!-- Isi Card Container -->
+            <div class="flex flex-col bg-slate-100 my-28 items-center justify-center mx-auto md:h-screen md:w-1/2 lg:py-0 rounded-lg">
+                <!-- Logo S -->
+                <a href="" class="flex items-center mt-8 mb-4">
+                    <img src="/public/assets/LogoS.png" alt="" class="md:w-20 sm:w-14">
+                </a>
+                <!-- Form Input -->
+                <div class="flex flex-col w-full p-6 items-center space-y-4 md:space-y-6 sm:p-8 ">
+                    <h2 class="md:text-lg leading-tight text-slate-950 sm:text-xs font-semibold">Login To Your Account
+                    </h2>
+                    <form class="space-y-2 md:space-y-4 w-full" action="">
+                        <!-- div form -->
+                        <div class="pb-8">
+                            <!-- div email -->
+                            <div class="flex w-full">
+                                <div class="flex -mr-px justify-center w-15 p-4">
+                                    <span
+                                      class="flex items-center leading-normal bg-slate-100 mb-3 border-0 rounded rounded-r-none md:text-2xl sm:text-xl text-gray-600"
+                                    >
+                                      <i class="fas fa-envelope"></i>
+                                    </span>
+                                </div>
+                                <input type="email" name="email" id="email" class="bg-slate-100 border border-slate-100 active: border-b-2  text-slate-950 sm:text-sm rounded-lg w-full p-2.5 flex-shrink flex-grow flex-auto mb-4" placeholder="Email">
+                            </div>
+                            <!-- div password -->
+                            <div class="flex w-full">
+                                <div class="flex -mr-px justify-center w-15 p-4">
+                                    <span
+                                      class="flex items-center leading-normal bg-slate-100 border-0 rounded rounded-r-none md:text-2xl sm:text-xl text-gray-600 "
+                                    >
+                                      <i class="fas fa-lock"></i>
+                                    </span>
+                                </div>
+                                <input type="password" name="password" id="password"
+                                    class="bg-slate-100 border border-slate-100 active: border-b-2  text-slate-950 sm:text-sm rounded-lg w-full p-2.5 flex-shrink flex-grow flex-auto" placeholder="Password">
+                            </div>                            
+                        </div>
+                        
+                        <a href="" >
+                            <button type="submit" class="bg-slate-950 md:h-10 text-center items-center md:px-8 md:py-1 md:text-lg sm:text-xs sm:h-6 text-white rounded-3xl leading-tight font-sans mt-2 mb-2 w-full">Login</button>
+                        </a>
+                        <a href="" >
+                            <button type="submit" class="bg-slate-400 md:h-10 text-center items-center md:px-8 md:py-1 md:text-lg sm:text-xs sm:h-6 text-white rounded-3xl leading-tight font-sans mt-2 mb-2 w-full">Register</button>
+                        </a>
+                    </form>
+                </div>    
+            </div>
+        </div>
+    </section>
+</body>
+</html>

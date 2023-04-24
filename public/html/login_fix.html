@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LOGIN</title>
     <link rel="stylesheet" href="../css/output.css">
-    <link rel="icon" href="../assets/LogoS.png">
+    <link rel="icon" href="../assets/logo_scrumin.png">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
@@ -15,55 +15,57 @@
 </head>
 <body>
     <!-- Background Keseluruhan -->
-    <section class="bg-slate-400">
-        <!-- Card Container -->
-        <div class="flex flex-col w-2/3 rounded-lg items-center justify-center mx-auto md:h-screen lg:py-0 sm:font-thin">
+    <section class="bg-gradient-to-br from-slate-300 to-orange-400  flex flex-row">
+        <!-- Kiri -->
+        <div class="flex flex-col w-2/3 relative">
+            <!-- <img class="w-full object-cover h-full" src="/public/assets/bg_forest.jpeg" alt=""> -->
+            <h1 class="absolute text-5xl text-white top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 items-center justify-center m-auto font-bold">IMAGE</h1>
+            <img class="absolute text-2xl w-12 text-white font-semibold top-12 left-12" src="/public/assets/logo_scrumin.png" alt="">
+            <h2 class="absolute text-2xl text-white font-semibold top-12 right-12">Manage Your Scrum Neatly</h2>
+        </div>
+        <!-- Kanan -->
+        <div class="flex flex-col w-1/3 rounded-lg items-center justify-center md:h-screen lg:py-0 sm:font-thin">
             <!-- Isi Card Container -->
-            <div class="flex flex-col bg-slate-100 my-28 items-center justify-center mx-auto md:h-screen md:w-1/2 lg:py-0 rounded-lg">
-                <!-- Logo S -->
-                <a href="" class="flex items-center mt-8 mb-4">
-                    <img src="/public/assets/LogoS.png" alt="" class="md:w-20 sm:w-14">
-                </a>
+            <div class="flex flex-col bg-white items-center justify-center w-full md:h-screen lg:py-0">
                 <!-- Form Input -->
-                <div class="flex flex-col w-full p-6 items-center space-y-4 md:space-y-6 sm:p-8 ">
-                    <h2 class="md:text-lg leading-tight text-slate-950 sm:text-xs font-semibold">Login To Your Account
-                    </h2>
+                <div class="flex flex-col w-full p-6 items-center  sm:p-8 ">
+                    <h1 class=" font-semibold text-slate-950 md:text-4xl sm:text-xs">Welcome Back
+                    </h1>
+                    <h2 class="text-lg text-slate-950 md:text-lg sm:text-xs">Sign In To Your Account</h2>
                     <form class="space-y-2 md:space-y-4 w-full" action="">
                         <!-- div form -->
-                        <div class="pb-8">
+                        <div class="mt-14 pb-8">
                             <!-- div email -->
                             <div class="flex w-full">
                                 <div class="flex -mr-px justify-center w-15 p-4">
                                     <span
-                                      class="flex items-center leading-normal bg-slate-100 mb-3 border-0 rounded rounded-r-none md:text-2xl sm:text-xl text-gray-600"
+                                      class="flex items-center leading-normal bg-white mb-3 border-0 rounded rounded-r-none md:text-2xl sm:text-xl text-gray-600"
                                     >
                                       <i class="fas fa-envelope"></i>
                                     </span>
                                 </div>
-                                <input type="email" name="email" id="email" class="bg-slate-100 border border-slate-100 active: border-b-2  text-slate-950 sm:text-sm rounded-lg w-full p-2.5 flex-shrink flex-grow flex-auto mb-4" placeholder="Email">
+                                <input type="email" name="email" id="email" class="bg-white border border-slate-100 active: border-b-2  text-slate-950 sm:text-sm rounded-lg w-full p-2.5 flex-shrink flex-grow flex-auto mb-4" placeholder="Email">
                             </div>
                             <!-- div password -->
                             <div class="flex w-full">
                                 <div class="flex -mr-px justify-center w-15 p-4">
                                     <span
-                                      class="flex items-center leading-normal bg-slate-100 border-0 rounded rounded-r-none md:text-2xl sm:text-xl text-gray-600 "
+                                      class="flex items-center leading-normal bg-white border-0 rounded rounded-r-none md:text-2xl sm:text-xl text-gray-600 "
                                     >
                                       <i class="fas fa-lock"></i>
                                     </span>
                                 </div>
                                 <input type="password" name="password" id="password"
-                                    class="bg-slate-100 border border-slate-100 active: border-b-2  text-slate-950 sm:text-sm rounded-lg w-full p-2.5 flex-shrink flex-grow flex-auto" placeholder="Password">
+                                    class="bg-white border border-slate-100 active: border-b-2  text-slate-950 sm:text-sm rounded-lg w-full p-2.5 flex-shrink flex-grow flex-auto" placeholder="Password">
                             </div>                            
                         </div>
                         
                         <a href="" >
-                            <button type="submit" class="bg-slate-950 md:h-10 text-center items-center md:px-8 md:py-1 md:text-lg sm:text-xs sm:h-6 text-white rounded-3xl leading-tight font-sans mt-2 mb-2 w-full">Login</button>
-                        </a>
-                        <a href="" >
-                            <button type="submit" class="bg-slate-400 md:h-10 text-center items-center md:px-8 md:py-1 md:text-lg sm:text-xs sm:h-6 text-white rounded-3xl leading-tight font-sans mt-2 mb-2 w-full">Register</button>
+                            <button type="submit" class="bg-slate-950 md:h-10 text-center items-center md:px-8 md:py-1 md:text-lg sm:text-xs sm:h-6 text-white rounded-xl leading-tight font-sans mt-2 mb-2 w-full">Login</button>
                         </a>
                     </form>
-                </div>    
+                </div>   
+                <h1 class="text-sm mt-28 font-medium text-gray-900">Don't have an account? <a href="#" class="text-blue-600 hover:underline">Sign Up</a></h1> 
             </div>
         </div>
     </section>
