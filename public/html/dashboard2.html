@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="../css/output.css">
+    <link rel="icon" href="../assets/logo_scrumin.png">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
+</head>
+<body class="font-['Open_Sans']">
+    <section class="flex flex-row">
+        <!-- sidebar -->
+        <aside class="flex flex-col bg-[#4B6D5F] w-[188px] h-screen">
+            <!-- Logo ScrumIn -->
+            <div class="h-20 pt-5 justify-center mx-auto">
+                <img class="flex items-center justify-center w-12" src="/public/assets/logo_scrumin_nt.png" alt="">
+            </div>
+            <ul class="flex flex-col items-center space-y-4">
+                <li class="flex h-12 justify-center text-white font-normal w-full hover:bg-white hover:text-black"><a class="text-xs m-auto" href="">Overview</a></li>
+                <li class="flex h-12 justify-center text-white font-normal w-full hover:bg-white hover:text-black"><a class="text-xs m-auto" href="">Project</a></li>
+                <li class="flex h-12 justify-center text-white font-normal w-full hover:bg-white hover:text-black"><a class="text-xs m-auto" href="">Schedule</a></li>
+                <li class="flex h-12 justify-center text-white font-normal w-full hover:bg-white hover:text-black"><a class="text-xs m-auto" href="">Forum</a></li>
+            </ul>
+        </aside>
+        <!-- Bagian Dashboard -->
+        <div class="flex flex-col bg-[#DEE5D4] w-full h-screen">
+            <!-- Bagian yang mirip Navbar -->
+            <div class="flex flex-row w-full h-14 pt-3">
+                <!-- Kiri -->
+                <div class="flex flex-row w-4/5">
+                    <h1 class="pl-5 pt-2 text-lg font-medium">Dashboard</h1>
+                    <h1 class="pl-2 pt-2 text-lg font-medium">/</h1>
+                    <h1 class="pl-2 pt-2 text-lg font-light">Overview</h1>
+                </div>
+                <!-- Kanan / Profil-->
+                <div class="flex flex-row w-1/5">
+                    <!-- Avatar -->
+                    <img class="flex h-9 w-9 my-auto mr-1" src="/public/assets/user_avatar.png" alt="">
+                    <!-- Nama -->
+                    <div class="flex flex-col my-auto ml-1">
+                        <h1 class="flex text-sm font-semibold">Paijo Notonegoro</h1>
+                        <h1 class="flex text-xs">paijoNtng@gail.com</h1>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tulisan Overview -->
+            <div class="flex h-16">
+                <h1 class="pt-6 pl-7 text-xl font-semibold">Overview</h1>
+            </div>
+
+            <!-- Bagian Card Project & Todo Task -->
+            <div class="flex flex-row h-48 pl-10 bg-slate-700">
+                <!-- Card 1 -->
+                <div class="flex flex-col w-283px h-180px bg-white rounded-2xl p-3 shadow-2xl">
+                    <div class="flex flex-row my-2">
+                        <div class="flex w-1/6">
+                            <img class="w-4 h-4 m-auto" src="/public/assets/logo_scrumin_nt.png" alt="">
+                        </div>
+                        <div class="w-5/6">
+                            <h1 class="text-sm font-semibold">Project Title</h1>
+                        </div>
+                    </div>
+                    <!-- description -->
+                    <div class="my-2">
+                        <p class="text-[8px] px-2 font-bold">Short Description goes here, where the system take your description about the project that you input before</p>
+                    </div>
+                    <!-- Progress Bar -->
+                    <div class="my-2 px-2 w-full">                       
+                        <div class="flex justify-between mb-1">
+                            <span class="text-[8px] font-bold text-black">Progress</span>
+                            <span class="text-[8px] font-bold text-black">10%</span>
+                        </div>
+                        <div class="w-full bg-gray-200 rounded-full h-1 dark:bg-gray-200">
+                            <div class="bg-black h-1 rounded-full" style="width: 10%"></div>
+                        </div>
+                    </div>
+                    <!-- tim member -->
+                    <div class="mt-2 px-2 w-full">
+                        <h1 class="text-[8px] font-bold text-black">Team Member</h1>
+                    </div>
+                    <div class="flex flex-row mt-1 px-2">
+                        <img class="w-5 px-[2px]" src="/public/assets/elips.png" alt="">
+                        <img class="w-5 px-[2px]" src="/public/assets/elips.png" alt="">
+                        <img class="w-5 px-[2px]" src="/public/assets/elips.png" alt="">
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="flex flex-col w-283px h-180px bg-white rounded-2xl p-3 ml-10 shadow-2xl">
+                    <div class="flex flex-row my-2">
+                        <div class="flex w-1/6">
+                            <img class="w-4 h-4 m-auto" src="/public/assets/logo_scrumin_nt.png" alt="">
+                        </div>
+                        <div class="w-5/6">
+                            <h1 class="text-sm font-semibold">Project Title</h1>
+                        </div>
+                    </div>
+                    <!-- description -->
+                    <div class="my-2">
+                        <p class="text-[8px] px-2 font-bold">Short Description goes here, where the system take your description about the project that you input before</p>
+                    </div>
+                    <!-- Progress Bar -->
+                    <div class="my-2 px-2 w-full">                       
+                        <div class="flex justify-between mb-1">
+                            <span class="text-[8px] font-bold text-black">Progress</span>
+                            <span class="text-[8px] font-bold text-black">10%</span>
+                        </div>
+                        <div class="w-full bg-gray-200 rounded-full h-1 dark:bg-gray-200">
+                            <div class="bg-black h-1 rounded-full" style="width: 10%"></div>
+                        </div>
+                    </div>
+                    <!-- tim member -->
+                    <div class="mt-2 px-2 w-full">
+                        <h1 class="text-[8px] font-bold text-black">Team Member</h1>
+                    </div>
+                    <div class="flex flex-row mt-1 px-2">
+                        <img class="w-5 px-[2px]" src="/public/assets/elips.png" alt="">
+                        <img class="w-5 px-[2px]" src="/public/assets/elips.png" alt="">
+                        <img class="w-5 px-[2px]" src="/public/assets/elips.png" alt="">
+                    </div>
+                </div>
+
+                <!-- Todo -->
+                <div class="flex flex-row ml-10">
+                    <div class="flex flex-col w-[117px] h-[65px] bg-white rounded-xl pt-2 mr-6">
+                        <h1 class="flex text-[10px] font-bold justify-center">Todo Task</h1>
+                        <h1 class="flex text-[20px] justify-center">2</h1>
+                    </div>
+                    <div class="flex flex-col w-[117px] h-[65px] bg-white rounded-xl pt-2 mr-6">
+                        <h1 class="flex text-[10px] font-bold justify-center">Todo Task</h1>
+                        <h1 class="flex text-[20px] justify-center">2</h1>
+                    </div>
+                    <div class="flex flex-col w-[117px] h-[65px] bg-white rounded-xl pt-2 mr-6">
+                        <h1 class="flex text-[10px] font-bold justify-center">Todo Task</h1>
+                        <h1 class="flex text-[20px] justify-center">2</h1>
+                    </div>
+                </div>
+            </div>
+            
+
+
+        </div>
+    </section>
+</body>
+</html>
