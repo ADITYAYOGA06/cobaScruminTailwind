@@ -46,15 +46,24 @@
                     <h1 class="pl-2 pt-2 text-lg font-medium">/</h1>
                     <h1 class="pl-2 pt-2 text-lg font-light">Overview</h1>
                 </div>
-                <!-- Kanan / Profil-->
-                <div class="flex flex-row w-1/5">
-                    <!-- Avatar -->
-                    <img class="flex h-9 w-9 my-auto mr-1" src="/public/assets/user_avatar.png" alt="">
-                    <!-- Nama -->
-                    <div class="flex flex-col my-auto ml-1">
-                        <h1 class="flex text-sm font-semibold">Paijo Notonegoro</h1>
-                        <h1 class="flex text-xs">paijoNtng@gail.com</h1>
-                    </div>
+                <!-- Kanan / Profil--> 
+                <div class="dropdown inline-block relative mb-2">
+                    <button class="flex w-full">
+                        <span class="flex mr-1">
+                            <div class="flex flex-row w-1/5 mb-2">
+                                <!-- Avatar -->
+                                <img class="flex h-9 w-9 my-auto mr-1" src="/public/assets/user_avatar.png" alt="">
+                                <!-- Nama -->
+                                <div class="flex flex-col my-auto ml-1">
+                                    <h1 class="flex text-sm font-semibold">Paijo Notonegoro</h1>
+                                    <h1 class="flex text-xs">paijoNtng@gmail.com</h1>
+                                </div>
+                            </div> 
+                        </span>
+                    </button>
+                    <ul class="dropdown-menu absolute hidden text-black items-center">
+                        <li class="justify-center"><a class="w-[199px] rounded-b-md hover:bg-green-200 py-2 px-4 block text-sm font-semibold justify-center" href="#">Sign Out</a></li>
+                    </ul>
                 </div>
             </div>
 
@@ -69,7 +78,7 @@
                 <div class="flex flex-col w-283px h-180px bg-white rounded-2xl p-3 shadow-2xl">
                     <div class="flex flex-row my-2">
                         <div class="flex w-1/6">
-                            <img class="w-[30px] h-[30px] m-auto" src="/public/assets/logo_scrumin_nt.png" alt="">
+                            <img class="w-7 h-7 m-auto" src="/public/assets/logo_scrumin_nt.png" alt="">
                         </div>
                         <div class="flex w-5/6 items-center">
                             <h1 class="text-sm font-semibold">Scrum.In</h1>
@@ -95,7 +104,7 @@
                 <div class="flex flex-col w-283px h-180px bg-white rounded-2xl p-3 ml-10 shadow-2xl">
                     <div class="flex flex-row my-2">
                         <div class="flex w-1/6">
-                            <img class="w-[30px] h-[30px] m-auto" src="/public/assets/logo_scrumin_nt.png" alt="">
+                            <img class="w-7 h-7 m-auto" src="/public/assets/logo_scrumin_nt.png" alt="">
                         </div>
                         <div class="flex w-5/6 items-center">
                             <h1 class="text-sm font-semibold">Land In Page</h1>
@@ -155,8 +164,8 @@
                         <tr class="h-8">
                             <td class="text-left">Wireframing Dashboard Page</td>
                             <td>
-                                <div class="h-[22px] w-[50px] bg-green-400 m-auto">
-                                    <h1 class="m-auto">Complete</h1>
+                                <div id="targetWarna" class="h-[22px] w-[50px] bg-green-400 m-auto">
+                                    <h1 id="statusProject" class="m-auto">Complete</h1>
                                 </div>
                             </td>
                             <td>High</td>
@@ -165,21 +174,33 @@
                         </tr>
                         <tr class="h-8">
                             <td class="text-left">High Fidelity UI</td>
-                            <td>On Going</td>
+                            <td>
+                                <div id="targetWarna" class="">
+                                    <h1 id="statusProject" class="m-auto">On Going</h1>
+                                </div>
+                            </td>
                             <td>Medium</td>
                             <td>10 May 2023</td>
                             <td>Scrum.in</td>
                         </tr>
                         <tr class="h-8">
                             <td class="text-left">High Fidelity UI</td>
-                            <td>On Going</td>
+                            <td>
+                                <div id="targetWarna" class="">
+                                    <h1 id="statusProject" class="m-auto">On Going</h1>
+                                </div>
+                            </td>
                             <td>Medium</td>
                             <td>10 May 2023</td>
                             <td>Scrum.in</td>
                         </tr>
                         <tr class="h-8">
                             <td class="text-left">Connect UI/UX to code using Figma Plugin</td>
-                            <td>Todo</td>
+                            <td>
+                                <div id="targetWarna" class="">
+                                    <h1 id="statusProject" class="m-auto">Todo</h1>
+                                </div>
+                            </td>
                             <td>Low</td>
                             <td>20 May 2023</td>
                             <td>Land In Page</td>
@@ -187,8 +208,37 @@
                     </tbody>
                 </table>
             </div>
-
         </div>
     </section>
 </body>
 </html>
+
+<style>
+    .dropdown:hover .dropdown-menu {
+        display: block;
+    }
+</style>
+
+<script>
+    const tulisanStatus = document.querySelector('.statusProject')
+    tulisanStatus.addEventListener('change', function() {
+        const warnaStatus = document.querySelector('.targetWarna')
+
+        if (tulisanStatus.innerHTML === 'On Going') {
+            warnaStatus.className = 'h-[22px] w-[50px] bg-yellow-500 m-auto'
+        }if (tulisanStatus.innerHTML === 'Complete') {
+            warnaStatus.className = 'h-[22px] w-[50px] bg-green-400 m-auto'
+        }if (tulisanStatus.innerHTML === 'Complete') {
+            warnaStatus.className = 'h-[22px] w-[50px] bg-green-400 m-auto'
+        }
+        warnaStatus.focus()
+    })
+
+
+// const tulisanStatus = document.getElementById('statusProject');
+// const warnaStatus = document.getElementById('targetWarna');
+
+// if(tulisanStatus.innerHTML === 'On Going'){
+//     warnaStatus.className = 'h-[22px] w-[50px] bg-yellow-500 m-auto';
+// }
+</script>
