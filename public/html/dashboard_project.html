@@ -62,12 +62,18 @@
                     </div>
                 </button>    
                 <div class="modal my-40 fixed inset-0 opacity-0 pointer-events-none transition duration-300 w-1/2 m-auto">
-                    <div class="modal-content bg-white rounded-xl shadow-lg p-8 m-auto">
+                    <div class="modal-content flex flex-col bg-white rounded-xl shadow-lg p-8 m-auto">
                         <h1>NGETES</h1>
-                        <h1>MODAL</h1>
-                        <h1>NGETES</h1>
-                        <h1>MODAL</h1>
-                        <button class="modal-close">Close Modal</button>
+                        <div class="flex flex-row">
+                            <div class="flex flex-col w-44">
+                                <input id="inputRole" class="flex rounded-md w-40 h-7 mr-4 bg-slate-300 mb-3" type="text" name="" id="">
+                            </div>
+                            <button onclick="myFunction()" class="flex">
+                                <h1 class="px-3 rounded-md py-1 bg-slate-400">+</h1>
+                            </button>
+                        </div>
+                        
+                        <button class="modal-close items-center">Close Modal</button>
                     </div>
                 </div>        
 
@@ -104,11 +110,9 @@
     modal.classList.add('opacity-0', 'pointer-events-none');
     });
 
-    // modalOpen.addEventListener('click', function() {
-    //     modal.classList.toggle('hidden');
-    // });
-    // modalClose.addEventListener('click', function() {
-    //     modal.classList.toggle('hidden');
-    // });
-
+    function myFunction() {
+        const h2 = document.getElementById("inputRole");
+        let html = '<input id="inputRole" class="flex rounded-md w-40 h-7 mr-4 bg-slate-300 mb-3" type="text" name="" id="">';
+        h2.insertAdjacentHTML("afterend", html);
+    }
 </script>

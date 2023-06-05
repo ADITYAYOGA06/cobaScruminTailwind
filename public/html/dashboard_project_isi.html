@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+    <link rel="stylesheet" href="../css/output.css">
+    <link rel="icon" href="../assets/logo_scrumin.png">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
+</head>
+<body class="bg-[#DEE5D4]">
+    <!-- The wrapper of tabs -->
+    <div class="drop-shadow-lg bg-[#DEE5D4]">
+        <!-- Tab Buttons -->
+        <div id="tab-buttons" class="flex ml-12 bg-[#DEE5D4]">
+            <a href="javascript:void(0)" onclick="changeTab(event, 0)" class="inline-block px-5 py-3 text-xs  text-blue-600 divide-y-4">Overview
+                <hr class="border mt-2 rounded-lg">
+            </a>
+            <a href="javascript:void(0)" onclick="changeTab(event, 1)" class="inline-block px-5 py-3 text-xs  text-blue-600 divide-y-4">Planning
+                <hr class="border mt-2 rounded-lg">
+            </a>
+            <a href="javascript:void(0)" onclick="changeTab(event, 2)" class="inline-block px-5 py-3 text-xs  text-blue-600 divide-y-4">Timeline
+                <hr class="border mt-2 rounded-lg">
+            </a>
+        </div>
+
+        <!-- Tab Panels -->
+        <div id="tab-panels" class="px-8 py-6 w-2/3 m-auto">
+            <div class="flex flex-col">
+                <div class="flex flex-row justify-between">
+                    <div class="flex flex-row w-5/6">
+                        <!-- <img src="" alt=""> -->
+                        <div class="flex rounded-full w-11 h-11 bg-red-400">
+                            <h1 class="flex text-2xl text-white font-semibold m-auto">N</h1>
+                        </div>
+                        <h1 class="flex text-2xl ml-4 my-auto font-bold">Nama Project</h1>
+                    </div>
+                    <div class="flex hover:cursor-pointer flex-row m-auto w-1/6 justify-end">
+                        <h1 class="flex text-xs">Edit</h1>
+                        <img class="flex w-6" src="/public/assets/bxs_edit.png" alt="">
+                    </div>
+                </div>
+                <hr class="flex mt-4 border w-full rounded-xl">
+
+                <div class="flex mt-5">
+                    <p class="flex text-xs text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum auctor ornare leo, non suscipit magna interdum eu. Curabitur pellentesque nibh nibh, at maximus ante fermentum sit amet. Pellentesque commodo lacus at sodales sodales. Quisque sagittis orci ut diam condimentum, vel euismod erat placerat. In iaculis arcu eros, eget tempus orci facilisis id.</p>
+                </div>
+
+                <div class="flex mt-10">
+                    <h1 class="flex text-base my-auto font-medium">Project Member</h1>
+                </div>
+                <hr class="flex mt-2 border w-full rounded-xl">
+                <!-- <div class="grid grid-cols-4 gap-2 space-x-6 space-y-4">   
+                </div> -->
+                <div class="py-3 flex flex-row space-x-4">
+                    <div class="flex hover:cursor-pointer flex-row h-14 hover:bg-white px-2 w-40 hover:shadow-2xl hover:rounded-md">
+                        <img class="flex h-10 w-10 my-auto" src="/public/assets/add_member.png" alt="">
+                        <h1 class="flex my-auto ml-2 text-xs text-[#4B6D5F]">Add Member</h1>
+                    </div>
+
+                    <div class="flex hover:cursor-pointer flex-row h-14 hover:bg-white px-2 w-40 hover:shadow-2xl hover:rounded-md">
+                        <div class="flex m-auto rounded-full w-11 h-11 bg-red-400">
+                            <h1 class="flex text-2xl text-white font-semibold m-auto">S</h1>
+                        </div>
+                        <div class="flex m-auto flex-col">
+                            <h1 class="flex my-auto ml-2 text-xs text-black">Riefkyanov Surya</h1>
+                            <h1 class="flex my-auto ml-2 text-[8px] text-black">Product Owner</h1>
+                        </div>
+                    </div>
+
+                    <div class="flex hover:cursor-pointer flex-row h-14 hover:bg-white px-2 w-40 hover:shadow-2xl hover:rounded-md">
+                        <div class="flex m-auto rounded-full w-11 h-11 bg-green-400">
+                            <h1 class="flex text-2xl text-white font-semibold m-auto">A</h1>
+                        </div>
+                        <div class="flex m-auto flex-col">
+                            <h1 class="flex my-auto ml-2 text-xs text-black">Aditya Yoga</h1>
+                            <h1 class="flex my-auto ml-2 text-[8px] text-black">Front End Dev</h1>
+                        </div>
+                    </div>
+
+                    <div class="flex hover:cursor-pointer flex-row h-14 hover:bg-white px-2 w-40 hover:shadow-2xl hover:rounded-md">
+                        <div class="flex m-auto rounded-full w-11 h-11 bg-blue-400">
+                            <h1 class="flex text-2xl text-white font-semibold m-auto">C</h1>
+                        </div>
+                        <div class="flex m-auto flex-col">
+                            <h1 class="flex my-auto ml-2 text-xs text-black">Cipto Ardiantoro</h1>
+                            <h1 class="flex my-auto ml-2 text-[8px] text-black">Front End Dev</h1>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="py-3 flex flex-row space-x-4">
+                    <div class="flex hover:cursor-pointer flex-row h-14 hover:bg-white px-2 w-40 hover:shadow-2xl hover:rounded-md">
+                        <div class="flex m-auto rounded-full w-11 h-11 bg-yellow-400">
+                            <h1 class="flex  text-2xl text-white font-semibold m-auto">A</h1>
+                        </div>
+                        <div class="flex m-auto flex-col">
+                            <h1 class="flex my-auto ml-2 text-xs text-black">Ahmad Faqih</h1>
+                            <h1 class="flex my-auto ml-2 text-[8px] text-black">Back End Dev</h1>
+                        </div>
+                    </div>
+                    
+                    <div class="flex hover:cursor-pointer flex-row h-14 hover:bg-white px-2 w-40 hover:shadow-2xl hover:rounded-md">
+                        <div class="flex m-auto rounded-full w-11 h-11 bg-pink-500">
+                            <h1 class="flex text-2xl text-white font-semibold m-auto">D</h1>
+                        </div>
+                        <div class="flex m-auto flex-col">
+                            <h1 class="flex my-auto ml-2 text-xs text-black">Daniel Dwi</h1>
+                            <h1 class="flex my-auto ml-2 text-[8px] text-black">UI/UX Designer</h1>
+                        </div>
+                    </div>
+
+                    <div class="flex hover:cursor-pointer flex-row h-14 hover:bg-white px-2 w-40 hover:shadow-2xl hover:rounded-md">
+                        <div class="flex m-auto rounded-full w-11 h-11 bg-purple-400">
+                            <h1 class="flex text-2xl text-white font-semibold m-auto">R</h1>
+                        </div>
+                        <div class="flex m-auto flex-col">
+                            <h1 class="flex my-auto ml-2 text-xs text-black">Rizky Hafizh</h1>
+                            <h1 class="flex my-auto ml-2 text-[8px] text-black">Scrum Master</h1>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="hidden">
+                <h1 class="text-2xl text-red-500">Tab 2 Content</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, doloremque.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, doloremque.</p>
+            </div>
+
+            <div class="hidden">
+                <h1 class="text-2xl text-purple-600">Tab 3 Content</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, doloremque.</p>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
+
+<script>
+    function changeTab(event, index) {
+        var tabButtons = document.getElementById('tab-buttons').children;
+        var tabPanels = document.getElementById('tab-panels').children;
+
+        // Remove the active utility classes from all tabs (bg-white, text-blue-600)
+        // And hide all tab content (with the "hidden" utility)
+        for (var i = 0; i < tabButtons.length; i++) {
+            tabButtons[i].classList.remove('border-2');
+            // tabButtons[i].getElementsByTagName('hr').remove;
+            // tabButtons[i].classList.remove('bg-white');
+            // tabButtons[i].classList.add('text-white');
+            tabPanels[i].classList.add('hidden');
+        }
+
+        // Add the active utility classes to the currently active tab (bg-white, text-blue-600)
+        // And show the current tab content (remove the "hidden" utility)
+        tabButtons[index].classList.remove('text-white');
+        tabButtons[index].getElementsByTagName('hr').remove;
+        // tabButtons[index].classList.add('text-blue-600');
+        // tabButtons[index].classList.add('bg-white');
+        tabPanels[index].classList.remove('hidden');
+    }
+</script>
