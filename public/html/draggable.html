@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/output.css">
+    <link rel="icon" href="../assets/logo_scrumin.png">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="flex">
+        <div class="flex-1">
+          <div class="bg-gray-200 p-4" id="todo" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <h2 class="text-lg font-bold mb-4">To Do</h2>
+            <div class="bg-white p-2 m-2" id="task1" draggable="true" ondragstart="dragStart(event)">
+                <p>Task 1</p>
+            </div>
+              
+            <div class="bg-white p-2 m-2" id="task2" draggable="true" ondragstart="dragStart(event)">
+                <p>Task 2</p>
+            </div>
+              
+            <div class="bg-white p-2 m-2" id="task3" draggable="true" ondragstart="dragStart(event)">
+                <p>Task 3</p>
+            </div>
+              
+            <!-- Add tasks here -->
+          </div>
+        </div>
+        <div class="flex-1">
+          <div class="bg-gray-200 p-4" id="inProgress" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <h2 class="text-lg font-bold mb-4">In Progress</h2>
+            <!-- Add tasks here -->
+          </div>
+        </div>
+        <div class="flex-1">
+          <div class="bg-gray-200 p-4" id="done" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <h2 class="text-lg font-bold mb-4">Done</h2>
+            <!-- Add tasks here -->
+          </div>
+        </div>
+      </div>
+      
+      
+</body>
+</html>
+
+<script>
+function dragStart(event) {
+  event.dataTransfer.setData('text/plain', event.target.id);
+}
+
+function allowDrop(event) {
+  event.preventDefault();
+}
+
+function drop(event) {
+  event.preventDefault();
+  const taskId = event.dataTransfer.getData('text/plain');
+  const taskElement = document.getElementById(taskId);
+  const destinationId = event.currentTarget.id;
+  const destinationElement = document.getElementById(destinationId);
+  
+  destinationElement.appendChild(taskElement);
+}
+
+
+</script>
