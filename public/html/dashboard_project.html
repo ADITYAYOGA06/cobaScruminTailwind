@@ -53,35 +53,37 @@
             <!-- Create or Join Project -->
             <div class="flex flex-row items-center text-center mt-20">
                 <!-- Create Project -->
-                <button>
-                    <div class="modal-open flex flex-col w-60 h-60 border-dashed border-4 border-[#9B9B9B] items-center my-auto">
+                <div id="popup1">
+                    <div  class="modal-open flex flex-col w-60 h-60 border-dashed border-4 border-[#9B9B9B] items-center my-auto">
                         <div class="flex flex-col items-center my-auto">
                             <img class="flex w-14 h-14 mb-4" src="/public/assets/logo_plus.png" alt="">
                             <h1 class="flex justify-center mt-6 text-base text-[#9B9B9B]">Create New Project</h1>
                         </div>
                     </div>
-                </button>    
-                <div class="modal my-40 fixed inset-0 opacity-0 pointer-events-none transition duration-300 w-1/2 m-auto">
-                    <div class="modal-content flex flex-col bg-white rounded-xl shadow-lg p-8 m-auto">
-                        <h1>NGETES</h1>
-                        <div class="flex flex-row">
-                            <div class="flex flex-col w-44">
-                                <input id="inputRole" class="flex rounded-md w-40 h-7 mr-4 bg-slate-300 mb-3" type="text" name="" id="">
+                      
+                    <div class="modal my-40 fixed inset-0 opacity-0 pointer-events-none transition duration-300 w-1/2 m-auto">
+                        <div class="modal-content flex flex-col bg-white rounded-xl shadow-lg p-8 m-auto">
+                            <h1>NGETES</h1>
+                            <div class="flex flex-row">
+                                <div class="flex flex-col w-44">
+                                    <input id="inputRole" class="flex rounded-md w-40 h-7 mr-4 bg-slate-300 mb-3" type="text" name="" id="">
+                                </div>
+                                <button onclick="myFunction()" class="flex">
+                                    <h1 class="px-3 rounded-md py-1 bg-slate-400">+</h1>
+                                </button>
                             </div>
-                            <button onclick="myFunction()" class="flex">
-                                <h1 class="px-3 rounded-md py-1 bg-slate-400">+</h1>
-                            </button>
+                            
+                            <button class="modal-close items-center">Close Modal</button>
                         </div>
-                        
-                        <button class="modal-close items-center">Close Modal</button>
                     </div>
-                </div>        
+                </div>
+                        
 
                 <h1 class="flex mx-10">or</h1>
 
                 <!-- Join Project -->
                 <a href="">
-                    <div class="flex flex-col w-60 h-60 border-dashed border-4 border-[#9B9B9B] items-center my-auto">
+                    <div id="popup2" class="flex flex-col w-60 h-60 border-dashed border-4 border-[#9B9B9B] items-center my-auto">
                         <div class="flex flex-col items-center my-auto">
                             <img class="flex w-20 h-20 mb-4" src="/public/assets/logo_add.png" alt="">
                             <h1 class="flex justify-center mt-6 text-base text-[#9B9B9B]">Join Project</h1>
@@ -115,4 +117,6 @@
         let html = '<input id="inputRole" class="flex rounded-md w-40 h-7 mr-4 bg-slate-300 mb-3" type="text" name="" id="">';
         h2.insertAdjacentHTML("afterend", html);
     }
+
+    document.getElementById("popup2").className = document.getElementById("popup1").className;
 </script>

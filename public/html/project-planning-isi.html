@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/output.css">
+    <link rel="icon" href="../assets/logo_scrumin.png">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
+</head>
+<body class="font-['Open_Sans'] bg-[#DEE5D4]">
+    <div class="flex flex-row">
+        <!-- Kiri -->
+        <div class="flex flex-col w-7/12 pl-8 pr-6 pt-4">
+            <!-- Bagian Backlog -->
+            <div class="flex flex-col w-full">
+                <!-- Tulisan backlog dan button -->
+                <div class="flex flex-row w-full justify-between mt-2">
+                    <h1 class="flex text-xs font-black ml-8 my-auto ">Backlog</h1>
+                    <div class="flex px-1 flex-row w-20 h-6 bg-[#4B6D5F] rounded hover:cursor-pointer">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="white" class="bi bi-plus-lg my-auto" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z"/>
+                        </svg>
+                        <h1 class="flex text-[8px] my-auto text-white font-bold ml-1">Add Backlog</h1>
+                    </div>
+                </div>
+
+                <!-- List backlog -->
+                <div class="flex flex-col p-4" id="backlog" ondrop="drop(event)" ondragover="allowDrop(event)">
+                    <div class="flex flex-row w-11/12 mx-auto h-8 bg-slate-100 rounded-md my-1" id="task1" draggable="true" ondragstart="dragStart(event)">
+                        <h1 class="flex my-auto ml-4 text-[10px] w-5/6 hover:cursor-pointer">Memasang Bendera Merah Putih</h1>
+                        <div class="flex flex-row w-1/6 justify-between px-7">
+                            <div class="flex h-[14px] w-[14px] my-auto rounded-full bg-[#4B6D5F] hover:cursor-pointer">
+                                <h1 class="text-[8px] text-white m-auto">90</h1>
+                            </div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash my-auto hover:cursor-pointer" viewBox="0 0 16 16">
+                                <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5Zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5Zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6Z"/>
+                                <path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1ZM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118ZM2.5 3h11V2h-11v1Z"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="flex flex-row w-11/12 mx-auto h-8 bg-slate-100 rounded-md my-1" id="task2" draggable="true" ondragstart="dragStart(event)">
+                        <h1 class="flex my-auto ml-4 text-[10px] w-5/6 hover:cursor-pointer">Memasang Bendera Merah Putih</h1>
+                        <div class="flex flex-row w-1/6 justify-between px-7">
+                            <div class="flex h-[14px] w-[14px] my-auto rounded-full bg-[#4B6D5F] hover:cursor-pointer">
+                                <h1 class="text-[8px] text-white m-auto">90</h1>
+                            </div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash my-auto hover:cursor-pointer" viewBox="0 0 16 16">
+                                <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5Zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5Zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6Z"/>
+                                <path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1ZM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118ZM2.5 3h11V2h-11v1Z"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Total story point -->
+                <div class="flex flex-row justify-end mb-3">
+                    <div class="flex flex-row w-44">
+                        <h1 class="flex text-[6px] text-black">Total story point</h1>
+                        <h1 class="flex text-[6px] text-black pl-5">90</h1>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sprint -->
+            <div class="flex flex-col w-full mx-auto bg-white rounded-md my-1 pr-4">
+                <div class="flex flex-row w-full justify-between mt-2">
+                    <h1 class="flex text-xs font-black ml-8 my-auto">Sprint 1</h1>
+                    <div class="flex flex-row w-16 h-6 bg-[#4B6D5F] rounded hover:cursor-pointer">
+                        <h1 class="flex text-[8px] m-auto text-white font-bold">Start Sprint</h1>
+                    </div>
+                </div>
+                <div class="flex flex-col p-4" id="sprint1" ondrop="drop(event)" ondragover="allowDrop(event)">
+
+                </div>
+                <div class="flex flex-row justify-end mb-3">
+                    <div class="flex flex-row w-44">
+                        <h1 class="flex text-[6px] text-black">Total story point</h1>
+                        <h1 class="flex text-[6px] text-black pl-5">90</h1>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex border-dashed border-2 rounded-lg w-full h-12 border-black mt-7 hover:cursor-pointer">
+                <div class="flex flex-row m-auto">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="black" class="bi bi-plus-lg my-auto" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z"/>
+                    </svg>
+                    <h1 class="text-[10px] ml-2">Click here to create sprint</h1>
+                </div>
+            </div> 
+        </div>
+
+        <!-- Kanan -->
+        <div class="w-5/12">
+            <!-- Kotakan edit -->
+            <div class="flex flex-col w-10/12 p-5 bg-white ml-4 mt-16 rounded-lg">
+                <h1 class="flex text-base font-semibold">Memasang Bendera Merah Putih</h1>
+                <div class="mt-4">
+                    <h1 class="flex text-xs">Definition of done</h1>
+                    <textarea class="mt-2 hover:bg-[#D9DCD9] rounded-lg text-xs placeholder:p-1 hover:placeholder:text-white" placeholder="Describe your DoD about your backlog" name="" id="" cols="50" rows="4"></textarea>
+                </div>
+                <div class="flex flex-row mt-4">
+                    <h1 class="flex text-xs text-black">Total story point</h1>
+                    <h1 class="flex text-xs text-black pl-5">90</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+<script>
+    function dragStart(event) {
+      event.dataTransfer.setData('text/plain', event.target.id);
+    }
+    
+    function allowDrop(event) {
+      event.preventDefault();
+    }
+    
+    function drop(event) {
+      event.preventDefault();
+      const taskId = event.dataTransfer.getData('text/plain');
+      const taskElement = document.getElementById(taskId);
+      const destinationId = event.currentTarget.id;
+      const destinationElement = document.getElementById(destinationId);
+      
+      destinationElement.appendChild(taskElement);
+    }        
+</script>
