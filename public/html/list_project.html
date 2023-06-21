@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List Project</title>
+    <link rel="stylesheet" href="../css/output.css">
+    <link rel="icon" href="../assets/logo_scrumin.png">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
+</head>
+<body class="flex bg-[#DEE5D4]">
+    <div class="flex flex-col w-full px-9 pt-5">
+        <div class="flex">
+            <h1 class="flex text-xs text-left font-bold">List of Project</h1>
+        </div>
+        <div class="flex flex-row mt-3">
+            <div class="flex flex-row w-1/2 justify-start">
+                <div class="flex flex-row mr-1 w-16 h-5 bg-white rounded-md px-1 hover:cursor-pointer">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" fill="currentColor" class="bi bi-plus-lg my-auto mr-[2px]" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z"/>
+                      </svg>
+                    <h1 class="text-[8px] my-auto font-medium">New Project</h1>
+                </div>
+                <div class="flex flex-row ml-1 w-16 h-5 bg-white rounded-md px-1 hover:cursor-pointer">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" fill="currentColor" class="bi bi-person-plus my-auto mr-[2px]" viewBox="0 0 16 16">
+                        <path d="M6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H1s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C9.516 10.68 8.289 10 6 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"/>
+                        <path fill-rule="evenodd" d="M13.5 5a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0V8h-1.5a.5.5 0 0 1 0-1H13V5.5a.5.5 0 0 1 .5-.5z"/>
+                      </svg>
+                    <h1 class="text-[8px] my-auto font-medium">Join Project</h1>
+                </div>
+            </div>
+            <div class="flex flex-row justify-end w-1/2">
+                <input class="rounded-lg w-36 h-[25px] placeholder:text-[8px] placeholder:pl-2 pb-1" placeholder="Search your project" type="text" name="" id="">
+            </div>
+
+        </div>
+
+        <!-- Bagian Card-Card -->
+        <div class="flex flex-row gap-3 mt-3">
+            <!-- Card 1 -->
+            <div class="flex flex-col w-72 h-52 bg-white rounded-lg p-4 hover:cursor-pointer">
+                <h1 class="text-sm font-semibold">Project Title</h1>
+                <div id="divStatus" class="flex w-[68px] h-5 bg-[#ADEEAC] rounded-md mt-2">
+                    <h1 id="teksStatus" class="m-auto text-[9px] font-semibold text-[#258B22]">Completed</h1>
+                </div>
+                <div class="flex h-[72px] w-full mt-2">
+                    <p class="text-[8px] text-justify my-auto">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit consequuntur, laboriosam hic fuga doloribus quisquam magni id, officia totam facilis non ducimus dicta, atque sunt ut exercitationem saepe dolores voluptatum.</p>
+                </div>
+                <div class="flex flex-col mt-3">
+                    <h1 class="text-[8px] font-semibold">Team Member</h1>
+                    <div class="flex flex-row mt-1 gap-[2px]">
+                        <div class="flex w-[22px] h-[22px] bg-gray-600 rounded-full">
+                            <h1 class="mx-auto my-auto text-sm text-white">S</h1>
+                        </div>
+                        <div class="flex w-[22px] h-[22px] bg-gray-600 rounded-full">
+                            <h1 class="mx-auto my-auto text-sm text-white">A</h1>
+                        </div>
+                        <div class="flex w-[22px] h-[22px] bg-gray-600 rounded-full">
+                            <h1 class="mx-auto my-auto text-sm text-white">A</h1>
+                        </div>
+                        <div class="flex w-[22px] h-[22px] bg-gray-600 rounded-full">
+                            <h1 class="mx-auto my-auto text-sm text-white">D</h1>
+                        </div>
+                        <div class="flex w-[22px] h-[22px] bg-gray-600 rounded-full">
+                            <h1 class="mx-auto my-auto text-sm text-white">A</h1>
+                        </div>
+                        <div class="flex w-[22px] h-[22px] bg-gray-600 rounded-full">
+                            <h1 class="mx-auto my-auto text-sm text-white">R</h1>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+
+            <!-- Card 2 -->
+            <div class="flex flex-col w-72 h-52 bg-white rounded-lg p-4 hover:cursor-pointer">
+                <h1 class="text-sm font-semibold">Project Title</h1>
+                <div id="divStatus" class="flex w-[68px] h-5 bg-[#ADEEAC] rounded-md mt-2">
+                    <h1 id="teksStatus" class="m-auto text-[9px] font-semibold text-[#258B22]">Completed</h1>
+                </div>
+                <div class="flex h-[72px] w-full mt-2">
+                    <p class="text-[8px] text-justify my-auto">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit consequuntur, laboriosam hic fuga doloribus quisquam magni id, officia totam facilis non ducimus dicta, atque sunt ut exercitationem saepe dolores voluptatum.</p>
+                </div>
+                <div class="flex flex-col mt-3">
+                    <h1 class="text-[8px] font-semibold">Team Member</h1>
+                    <div class="flex flex-row mt-1 gap-[2px]">
+                        <div class="flex w-[22px] h-[22px] bg-gray-600 rounded-full">
+                            <h1 class="mx-auto my-auto text-sm text-white">S</h1>
+                        </div>
+                        <div class="flex w-[22px] h-[22px] bg-gray-600 rounded-full">
+                            <h1 class="mx-auto my-auto text-sm text-white">A</h1>
+                        </div>
+                        <div class="flex w-[22px] h-[22px] bg-gray-600 rounded-full">
+                            <h1 class="mx-auto my-auto text-sm text-white">A</h1>
+                        </div>
+                        <div class="flex w-[22px] h-[22px] bg-gray-600 rounded-full">
+                            <h1 class="mx-auto my-auto text-sm text-white">D</h1>
+                        </div>
+                        <div class="flex w-[22px] h-[22px] bg-gray-600 rounded-full">
+                            <h1 class="mx-auto my-auto text-sm text-white">A</h1>
+                        </div>
+                        <div class="flex w-[22px] h-[22px] bg-gray-600 rounded-full">
+                            <h1 class="mx-auto my-auto text-sm text-white">R</h1>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>
